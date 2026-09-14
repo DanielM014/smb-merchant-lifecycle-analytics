@@ -1,0 +1,81 @@
+{
+  "configured_merchant_count": 180,
+  "onboarding": {
+    "event_counts": {
+      "ABANDONED": 34,
+      "ACTIVATED": 98,
+      "APPROVED": 106,
+      "DOCUMENTS_COMPLETED": 141,
+      "REGISTERED": 180,
+      "REJECTED": 25,
+      "VALIDATION_STARTED": 172
+    },
+    "last_event_counts": {
+      "ABANDONED": 34,
+      "ACTIVATED": 98,
+      "APPROVED": 3,
+      "DOCUMENTS_COMPLETED": 9,
+      "REGISTERED": 1,
+      "REJECTED": 25,
+      "VALIDATION_STARTED": 10
+    }
+  },
+  "outputs": {
+    "merchants.csv": {
+      "rows": 180,
+      "sha256": "2bb987e58ac7b1c249b588216fdb7c503f9748c3ee746054392823721d4db6ea"
+    },
+    "onboarding_events.csv": {
+      "rows": 756,
+      "sha256": "e9a67fa7257609aeac22745284b888cf5d6e736125ffc8b659f285edb047412d"
+    }
+  },
+  "period": {
+    "as_of_date": "2026-09-01",
+    "end_date": "2026-08-31",
+    "start_date": "2025-01-01"
+  },
+  "schema_version": "1.0",
+  "seed": 3,
+  "synthetic_assumptions": {
+    "anchor_routes": {
+      "M001": [
+        "REGISTERED",
+        "VALIDATION_STARTED",
+        "DOCUMENTS_COMPLETED",
+        "APPROVED",
+        "ACTIVATED"
+      ],
+      "M002": [
+        "REGISTERED",
+        "VALIDATION_STARTED",
+        "DOCUMENTS_COMPLETED",
+        "REJECTED"
+      ],
+      "M003": [
+        "REGISTERED",
+        "VALIDATION_STARTED",
+        "ABANDONED"
+      ],
+      "M004": [
+        "REGISTERED",
+        "VALIDATION_STARTED",
+        "DOCUMENTS_COMPLETED"
+      ]
+    },
+    "route_probabilities": {
+      "ABANDONED_AFTER_APPROVED": 0.04,
+      "ABANDONED_AFTER_DOCUMENTS": 0.06,
+      "ABANDONED_AFTER_REGISTERED": 0.04,
+      "ABANDONED_AFTER_VALIDATION": 0.06,
+      "ACTIVATED": 0.58,
+      "IN_PROGRESS_APPROVED": 0.02,
+      "IN_PROGRESS_DOCUMENTS": 0.02,
+      "IN_PROGRESS_REGISTERED": 0.02,
+      "IN_PROGRESS_VALIDATION": 0.02,
+      "REJECTED_AFTER_DOCUMENTS": 0.08,
+      "REJECTED_AFTER_VALIDATION": 0.06
+    }
+  },
+  "timezone": "UTC-05:00"
+}

@@ -1,0 +1,23 @@
+[project]
+seed = 3
+start_date = "2025-01-01"
+end_date = "2026-08-31"
+as_of_date = "2026-09-01"
+merchant_count = 180
+currency = "COP"
+
+[onboarding]
+first_transaction_window_days = 30
+
+[sales_change]
+window_days = 28
+minimum_history_days = 56
+decline_threshold_pct = -20.0
+growth_threshold_pct = 20.0
+minimum_baseline_approved_transactions = 10
+minimum_baseline_active_days = 7
+
+[sales_change.priority]
+high_absolute_change_pct = 50.0
+medium_absolute_change_pct = 35.0
+low_absolute_change_pct = 20.0

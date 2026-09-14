@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smb-merchant-lifecycle-analytics"
+version = "0.1.0"
+description = "Synthetic SMB onboarding, merchant lifecycle and commercial insights analytics project."
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "numpy==2.5.3",
+    "pandas==3.0.5",
+    "pandera[pandas]==0.33.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --basetemp=.pytest_tmp"

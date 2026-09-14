@@ -1,0 +1,40 @@
+# Entorno virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pruebas y cobertura
+.pytest_cache/
+.pytest_tmp/
+.coverage
+.coverage.*
+htmlcov/
+
+# Empaquetado
+build/
+dist/
+*.egg-info/
+
+# Herramientas
+.ruff_cache/
+.mypy_cache/
+
+# Variables y secretos locales
+.env
+.env.*
+!.env.example
+
+# Visual Studio Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.temp
+~$*

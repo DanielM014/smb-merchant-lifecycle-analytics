@@ -187,12 +187,16 @@ def test_relojes_temporales_se_calculan_desde_su_origen() -> None:
             config.project.as_of_date
             - last_event_date
         ).days
+        
         assert bool(
             fila[
                 "is_commercial_activation_30d_eligible"
             ]
         ) == (
-            fila["days_since_registered"]
+            (
+                config.project.end_date
+                - registered_date
+            ).days
             >= config.onboarding.first_transaction_window_days
         )
 

@@ -239,11 +239,17 @@ def construir_modelo_onboarding(
                 _fecha(activated_at).date()
                 - registered_date
             ).days
-
+            
         days_since_registered = (
             config.project.as_of_date
             - registered_date
         ).days
+
+        days_observed_since_registered = (
+            config.project.end_date
+            - registered_date
+        ).days
+
         days_in_current_stage = (
             config.project.as_of_date
             - _fecha(ultimo_evento_at).date()
@@ -326,7 +332,7 @@ def construir_modelo_onboarding(
                 (
                     "is_commercial_activation_30d_eligible"
                 ): (
-                    days_since_registered
+                    days_observed_since_registered
                     >= config.onboarding.first_transaction_window_days
                 ),
                 "is_technically_activated": (

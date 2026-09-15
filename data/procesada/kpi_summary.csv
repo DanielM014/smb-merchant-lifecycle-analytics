@@ -1,0 +1,4 @@
+kpi_id,kpi_label,scope,as_of_date,window_days,numerator_count,denominator_count,population_count,kpi_value,kpi_unit,kpi_status
+COMMERCIAL_ACTIVATION_30D_RATE,Tasa de primera transacción a 30 días,GLOBAL,2026-09-01,30,80,168,168,47.619048,PCT,AVAILABLE
+MEDIAN_DAYS_TO_FIRST_TRANSACTION_30D,Mediana de días hasta primera transacción a tiempo,GLOBAL,2026-09-01,30,,,80,18.0,DAYS,AVAILABLE
+ACTIVE_30D_RATE,Tasa de actividad posterior a primera transacción,GLOBAL,2026-09-01,30,87,87,87,100.0,PCT,AVAILABLE

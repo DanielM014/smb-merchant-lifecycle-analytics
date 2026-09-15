@@ -1,0 +1,6 @@
+stage,stage_label,stage_order,merchant_count,previous_stage,previous_stage_count,conversion_from_previous_pct,non_progression_from_previous_count,non_progression_from_previous_pct,as_of_date
+REGISTERED,Registrados,1,180,,,,,,2026-09-01
+VALIDATION_STARTED,Validación iniciada,2,172,REGISTERED,180,95.555556,8,4.444444,2026-09-01
+DOCUMENTS_COMPLETED,Documentos completados,3,141,VALIDATION_STARTED,172,81.976744,31,18.023256,2026-09-01
+APPROVED,Aprobados,4,106,DOCUMENTS_COMPLETED,141,75.177305,35,24.822695,2026-09-01
+ACTIVATED,Activados,5,98,APPROVED,106,92.45283,8,7.54717,2026-09-01

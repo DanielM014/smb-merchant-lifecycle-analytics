@@ -7,19 +7,19 @@ from smb_merchant_lifecycle.config import (
     ProjectConfig,
     load_config,
 )
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     generar_comercios,
 )
-from smb_merchant_lifecycle.generacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.generacion import (
     generar_eventos_onboarding,
 )
-from smb_merchant_lifecycle.validacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.validacion import (
     guardar_resultado_validacion,
     validar_integridad_onboarding,
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = PROJECT_ROOT / "config" / "project.toml"
 
 

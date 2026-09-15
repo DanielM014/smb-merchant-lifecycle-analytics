@@ -1,0 +1,1 @@
+"""Generación y análisis de la actividad comercial SMB."""

@@ -1,0 +1,1 @@
+"""Catálogo maestro de comercios SMB."""

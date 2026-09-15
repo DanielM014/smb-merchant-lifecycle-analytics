@@ -8,10 +8,10 @@ import pandas as pd
 import pytest
 
 from smb_merchant_lifecycle.config import load_config
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     generar_comercios,
 )
-from smb_merchant_lifecycle.generacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.generacion import (
     PROBABILIDADES_RUTA,
     RUTAS_ANCLA,
     TRANSICIONES_PERMITIDAS,
@@ -20,7 +20,7 @@ from smb_merchant_lifecycle.generacion_onboarding import (
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = PROJECT_ROOT / "config" / "project.toml"
 
 

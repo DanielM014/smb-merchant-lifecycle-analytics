@@ -7,16 +7,16 @@ from smb_merchant_lifecycle.config import (
     ProjectConfig,
     load_config,
 )
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     generar_comercios,
 )
-from smb_merchant_lifecycle.generacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.generacion import (
     generar_eventos_onboarding,
 )
-from smb_merchant_lifecycle.modelo_onboarding import (
+from smb_merchant_lifecycle.onboarding.modelo import (
     construir_modelo_onboarding,
 )
-from smb_merchant_lifecycle.resumen_funnel_onboarding import (
+from smb_merchant_lifecycle.onboarding.resumen import (
     COLUMNAS_RESUMEN_FUNNEL,
     ETAPAS_FUNNEL,
     ResumenFunnelError,
@@ -25,7 +25,7 @@ from smb_merchant_lifecycle.resumen_funnel_onboarding import (
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = (
     PROJECT_ROOT
     / "config"

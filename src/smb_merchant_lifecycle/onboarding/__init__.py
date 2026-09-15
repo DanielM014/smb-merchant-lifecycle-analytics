@@ -1,0 +1,1 @@
+"""Generación, validación y análisis del onboarding SMB."""

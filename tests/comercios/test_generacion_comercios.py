@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     CANALES_ADQUISICION,
     CIUDADES,
     SEGMENTOS,
@@ -13,7 +13,7 @@ from smb_merchant_lifecycle.generacion_comercios import (
 from smb_merchant_lifecycle.config import load_config
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = PROJECT_ROOT / "config" / "project.toml"
 
 

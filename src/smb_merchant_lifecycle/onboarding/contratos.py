@@ -9,12 +9,12 @@ import pandas as pd
 import pandera.pandas as pa
 
 from smb_merchant_lifecycle.config import ProjectConfig
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     CANALES_ADQUISICION,
     CIUDADES,
     SEGMENTOS,
 )
-from smb_merchant_lifecycle.generacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.generacion import (
     TRANSICIONES_PERMITIDAS,
 )
 

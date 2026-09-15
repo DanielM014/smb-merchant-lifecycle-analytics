@@ -13,13 +13,13 @@ import pandas as pd
 import pandera.pandas as pa
 
 from smb_merchant_lifecycle.config import ProjectConfig, load_config
-from smb_merchant_lifecycle.contratos_datos import (
+from smb_merchant_lifecycle.onboarding.contratos import (
     COLUMNAS_COMERCIOS,
     COLUMNAS_EVENTOS_ONBOARDING,
     validar_contrato_comercios,
     validar_contrato_eventos_onboarding,
 )
-from smb_merchant_lifecycle.generacion_onboarding import TRANSICIONES_PERMITIDAS
+from smb_merchant_lifecycle.onboarding.generacion import TRANSICIONES_PERMITIDAS
 
 
 COLUMNAS_VIOLACIONES = (

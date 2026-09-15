@@ -14,7 +14,7 @@ from smb_merchant_lifecycle.config import (
     ProjectConfig,
     load_config,
 )
-from smb_merchant_lifecycle.generacion_comercios import (
+from smb_merchant_lifecycle.comercios.generacion import (
     generar_comercios,
     guardar_comercios,
 )

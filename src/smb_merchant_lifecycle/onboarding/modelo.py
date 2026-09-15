@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 from smb_merchant_lifecycle.config import ProjectConfig, load_config
-from smb_merchant_lifecycle.validacion_onboarding import (
+from smb_merchant_lifecycle.onboarding.validacion import (
     validar_integridad_onboarding,
 )
 
